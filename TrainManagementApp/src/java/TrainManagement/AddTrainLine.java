@@ -36,7 +36,7 @@ public class AddTrainLine {
             Class.forName("com.mysql.cj.jdbc.Driver");
             
             // connect to database
-            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/dbtrains", "root", "Dlsuid12343080#");
+            Connection conn = Connect.connect();
             System.out.println("Connection successful!");
             
             // Use the connection (e.g., create a statement, execute queries, etc.)
