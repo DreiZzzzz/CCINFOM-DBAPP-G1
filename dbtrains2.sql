@@ -1,3 +1,4 @@
+-- Last edit @ 11:58 p.m by Gelo (added more data)
 -- Last edit @ 2:18 p.m by Drei
 -- Last edit @ 3:13 a.m by Pat NOTE: sorry trying to fix adprg kaya late nakagawa
 
@@ -82,7 +83,8 @@ CREATE TABLE salary(
     effective_from DATE NOT NULL, 
     effective_to DATE DEFAULT NULL,
 	FOREIGN KEY(driver_id) REFERENCES drivers(driver_id)
-)
+);
+
 -- VIEW tables
 SELECT * FROM drivers;
 SELECT * FROM salary;
@@ -141,12 +143,13 @@ SELECT * FROM station_status_history JOIN train_stations ON station_status_histo
 
 -- Train Records
 INSERT INTO trains
-VALUES (),
-       (),
-       (),
-       (),
-       (),
-       ();
+VALUES (1, 1, '1st', 8, 208, '1984-12-01', '1999-12-31'),
+       (2, 1, '3rd', 12, 360, '2000-01-01', NULL),
+       (3, 2, '3rd', 12, 360, '2003-04-05', NULL),
+       (4, 3, '2nd', 10, 280, '1999-12-15', NULL),
+       (5, 4, '1st', 8, 208, '1975-11-24', '1994-02-25'),
+       (6, 4, '2nd', 10, 280, '1992-06-07', '2024-03-28'),
+       (7, 4, '4th', 12, 420, '2011-10-22', '2024-03-28');
 SELECT * FROM trains JOIN train_lines ON trains.train_line_id = train_lines.train_line_id;
 
 -- Train Status Records
@@ -161,12 +164,14 @@ SELECT * FROM train_status_log JOIN trains ON train_status_log.train_id = trains
 
 -- Drivers Records
 INSERT INTO drivers
-VALUES (),
-       (),
-       (),
-       (),
-       (),
-       ();
+VALUES (1, "Jasper", "Lee", "leejasper68@yahoo.com"),
+       (2, "Emman", "Dela Paz", "0927 064 6942"),
+       (3, "Ren", "Perez", "rcperez444@ymail.com"),
+       (4, "Albert", "Manuel", "bert_manuel@gmail.com"),
+       (5, "Tyler", "Sales", "tylermakessales@gmail.com"),
+       (6, "Kyle", "Ong", "kyle_ong_91@ymail.com"),
+       (7, "Rafael", "Borja", "borja_raphael@yahoo.com"),
+       (8, "Enzo", "Rivera", "0966 286 4853");
 SELECT * FROM drivers;
 
 -- Train Driver Records
@@ -181,10 +186,16 @@ SELECT * FROM train_driver_log JOIN drivers ON train_driver_log.driver_id = driv
 
 -- Salary
 INSERT INTO salary
-VALUES (),
-       (),
-       (),
-       (),
-       (),
-       ();
+VALUES (1, 1, 5200, '1999-11-11', '2006-02-17'),
+       (2, 1, 7500, '2006-02-18', NULL),
+       (3, 2, 4300, '1988-09-21', '1998-05-04'),
+       (4, 2, 6100, '1998-05-05', '2011-08-07'),
+       (5, 2, 7700, '2011-08-08', NULL),
+       (6, 3, 7650, '2012-02-03', NULL),
+       (7, 4, 8200, '2016-07-26', NULL),
+       (8, 5, 7120, '2019-04-30', NULL),
+       (9, 6, 6900, '2014-01-10', NULL),
+       (10, 7, 7300, '2007-03-18', '2021-10-11'),
+       (11, 7, 7800, '2021-10-12', NULL),
+       (12, 8, 6850, '2022-12-10', NULL);
 SELECT * FROM salary JOIN drivers ON salary.driver_id = drivers.train_id;
