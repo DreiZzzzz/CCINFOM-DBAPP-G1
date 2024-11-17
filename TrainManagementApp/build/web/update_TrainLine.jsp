@@ -1,14 +1,19 @@
+<%-- 
+    Document   : update_TrainLine.jsp
+    Created on : Nov 17, 2024, 1:35:21 PM
+    Author     : ZiaZandre
+--%>
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@page import = "java.util.*, TrainManagement.*" %>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>ADD TRAIN LINE JSP</title>
+        <title>UPDATE TRAINLINE OPERATIONS</title>
     </head>
     <body>
         <form action="index.html">
-            <jsp:useBean id="B" class= "TrainManagement.AddTrainLine" scope ="session" />
+            <jsp:useBean id="A" class= "TrainManagement.AddTrainLine" scope ="session" />
             <%
                 String v_line_name = request.getParameter("line_name");
                 String v_company_handler = request.getParameter("company_handler");
@@ -27,7 +32,7 @@
             %>     <h1>OPERATION FAILED!</h1>
             <% }
             %>
-         <input type="submit" value="Return to Menu">
+            <input type="submit" value="Return to Menu">
         </form>
     </body>
 </html>

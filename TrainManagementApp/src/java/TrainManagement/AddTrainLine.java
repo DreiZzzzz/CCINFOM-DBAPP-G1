@@ -27,7 +27,6 @@ public class AddTrainLine {
     
     }
     
-    
     public int register_AddTrainLine() {
        int temp = -1; 
        
@@ -36,7 +35,7 @@ public class AddTrainLine {
             Class.forName("com.mysql.cj.jdbc.Driver");
             
             // connect to database
-            Connection conn = Connect.connect();
+            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/dbtrains", "root", "Dlsuid12343080#");
             System.out.println("Connection successful!");
             
             // Use the connection (e.g., create a statement, execute queries, etc.)
@@ -74,14 +73,5 @@ public class AddTrainLine {
         
         return 0; // if failure
     }
-    
-    
-    public static void main(String[] args) {
-       
-        AddTrainLine test = new AddTrainLine();
-        
-        test.register_AddTrainLine();
-       
-    }
-    
+
 } 
