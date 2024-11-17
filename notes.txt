@@ -1,6 +1,7 @@
 SETTING UP
 
-1. Download and USe NetBeans        
+1. Download and Use NetBeans     
+Link: https://netbeans.apache.org/front/main/download/nb23/
 2. Before making a new project, download Apache Tomcat      
 Link: https://youtu.be/d8BAQ_zRmYY?si=MXY7bLesiPptYf9t      
 3. Add Apache Tomcat as a Server        
