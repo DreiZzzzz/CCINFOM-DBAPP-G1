@@ -154,12 +154,13 @@ SELECT * FROM trains JOIN train_lines ON trains.train_line_id = train_lines.trai
 
 -- Train Status Records
 INSERT INTO train_status_log
-VALUES (),
-       (),
-       (),
-       (),
-       (),
-       ();
+VALUES (1, 1, 'Retired', '1984-12-01', '1999-12-31'),
+       (2, 2, 'Operational', '2000-01-01', NULL),
+       (3, 3, 'Operational', '2003-04-05', NULL),
+       (4, 4, 'Operational', '1999-12-15', NULL),
+       (5, 5, 'Retired', '1975-11-24', '1994-02-25'),
+       (6, 6, 'Retired', '1992-06-07', '2024-03-28'),
+       (7, 7, 'Retired', '2011-10-22', '2024-03-28');
 SELECT * FROM train_status_log JOIN trains ON train_status_log.train_id = trains.train_id;
 
 -- Drivers Records
@@ -176,12 +177,14 @@ SELECT * FROM drivers;
 
 -- Train Driver Records
 INSERT INTO train_driver_log
-VALUES (),
-       (),
-       (),
-       (),
-       (),
-       ();
+VALUES (1, 1, 2, '1999-11-11', NULL),
+       (2, 2, 3, '1988-09-21', NULL),
+       (3, 3, 2, '2012-02-03', NULL),
+       (4, 4, 4, '2016-07-26', NULL),
+       (5, 5, 3, '2019-04-30', NULL),
+       (6, 6, 4, '2014-01-10', NULL),
+       (7, 7, 4, '2007-03-18', NULL),
+       (8, 8, 4, '2022-12-10', NULL);
 SELECT * FROM train_driver_log JOIN drivers ON train_driver_log.driver_id = drivers.driver_id JOIN trains ON train_driver_log.train_id = trains.train_id;
 
 -- Salary
