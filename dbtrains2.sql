@@ -79,7 +79,7 @@ CREATE TABLE train_driver_log(
 CREATE TABLE salary(
 	salary_id INT PRIMARY KEY,
     driver_id INT, 
-    salary INT, 
+    salary DOUBLE, 
     effective_from DATE NOT NULL, 
     effective_to DATE DEFAULT NULL,
 	FOREIGN KEY(driver_id) REFERENCES drivers(driver_id)
