@@ -1,0 +1,55 @@
+.post-title-deadline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#title {
+  font-weight: bold;
+  font-size: 20px;
+  width: 300px;
+  color: #f1dfb6;
+}
+
+.deadline-bar-container {
+  position: relative;
+  width: 40%;
+}
+
+.deadline-text {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--sub-text-color);
+  font-size: 10px;
+  font-weight: bold;
+  white-space: nowrap;
+  z-index: 2;
+}
+
+.deadline-bar {
+  position: relative;
+  height: 20px;
+  border-radius: 10px;
+  background: var(--primary-color);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-status {
+  background-color: #ef601e;
+  border-radius: 10px;
+  width: 100px;
+  color: #f1dfb6;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#status {
+  margin-bottom: 20px;
+}

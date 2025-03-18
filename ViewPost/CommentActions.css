@@ -1,0 +1,33 @@
+#commenter-action-buttons {
+  margin-left: 30px;
+  margin-bottom: 7px;
+}
+
+.comment-upvote-button,
+.comment-downvote-button,
+.comment-comment-button,
+.comment-share-button {
+  background: #373d3b;
+  border-radius: 7px;
+  font-size: small;
+  color: #f1dfb6;
+  padding: 0.3rem 0.6rem;
+  border-radius: 15px;
+  gap: 5px;
+  margin-top: 5px;
+  margin-left: 8px;
+  margin-bottom: 8px;
+}
+
+/* update implementation */
+.comment-upvote-button:hover,
+.comment-downvote-button:hover,
+.comment-comment-button:hover,
+.comment-share-button:hover {
+  background: rgb(55, 61, 49);
+}
+
+.actions-buttons {
+  margin-right: 10px;
+  color: #f1dfb6;
+}

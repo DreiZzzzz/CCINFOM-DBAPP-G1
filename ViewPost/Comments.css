@@ -1,0 +1,28 @@
+.post-commenter-profile {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  align-items: center;
+  color: #f1dfb6;
+}
+
+#commenter-image-container {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  float: left;
+}
+
+#commenter-comment-container {
+  color: #ffffff;
+  margin-left: 42px;
+  font-size: small;
+}
+
+#edit-comment-input {
+  background-color: #373d3b;
+  height: 30px;
+  width: 450px;
+  border-radius: 15px;
+  margin-left: 35px;
+}

@@ -1,0 +1,32 @@
+.post-profile-container {
+  background-color: var(--primary-color);
+  width: 570px;
+  height: 50px;
+  border-radius: 10px;
+  padding: 12px;
+  margin-bottom: 10px;
+  color: #f1dfb6;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.post-profile-container #post-container-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 10px;
+}
+
+.post-profile-container #post-follow-message button {
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  color: #f1dfb6;
+  margin-left: 10px;
+}
+
+#message-button {
+  margin-right: 100px;
+}
